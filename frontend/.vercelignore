@@ -1,0 +1,20 @@
+# Build output is regenerated on Vercel — never upload the local one.
+build/
+.dart_tool/
+.fvm/
+.idea/
+.vscode/
+
+# Platform folders unused by the web deploy.
+android/
+ios/
+linux/
+macos/
+windows/
+
+# Test & tooling artifacts.
+test/
+coverage/
+*.iml
+.flutter-plugins
+.flutter-plugins-dependencies
