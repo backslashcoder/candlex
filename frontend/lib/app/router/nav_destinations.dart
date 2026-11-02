@@ -14,6 +14,7 @@ const List<NavDestination> kNavDestinations = [
   NavDestination('/breadth', 'Market Breadth', Icons.bubble_chart_outlined),
   NavDestination('/sectors', 'Sector Intelligence', Icons.grid_view_outlined),
   NavDestination('/signals', 'Strategy Signals', Icons.insights_outlined),
+  NavDestination('/tradeblock', 'TradeBlock', Icons.account_tree_outlined),
   NavDestination('/watchlists', 'Watchlists', Icons.star_outline),
   NavDestination('/telegram', 'Telegram Alerts', Icons.send_outlined),
   NavDestination('/settings', 'Settings', Icons.settings_outlined),

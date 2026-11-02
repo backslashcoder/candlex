@@ -13,6 +13,8 @@ import '../../features/stock_detail/data/mock_stock_detail_repository.dart';
 import '../../features/stock_detail/domain/stock_detail_repository.dart';
 import '../../features/telegram/data/mock_alert_repository.dart';
 import '../../features/telegram/domain/alert_repository.dart';
+import '../../features/tradeblock/data/mock_trade_block_repository.dart';
+import '../../features/tradeblock/domain/trade_block_repository.dart';
 import '../../features/watchlists/data/mock_watchlist_repository.dart';
 import '../../features/watchlists/domain/watchlist_repository.dart';
 import '../../features/settings/data/settings_service.dart';
@@ -39,6 +41,8 @@ Future<void> configureDependencies() async {
       () => MockStockDetailRepository(sl()));
   sl.registerLazySingleton<StrategyRepository>(
       () => MockStrategyRepository(sl()));
+  sl.registerLazySingleton<TradeBlockRepository>(
+      () => MockTradeBlockRepository(sl()));
   sl.registerLazySingleton<WatchlistRepository>(
       () => MockWatchlistRepository(sl()));
   sl.registerLazySingleton<AlertRepository>(() => MockAlertRepository(sl()));

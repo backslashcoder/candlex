@@ -8,6 +8,7 @@ import '../../features/sectors/presentation/sectors_page.dart';
 import '../../features/settings/presentation/settings_page.dart';
 import '../../features/signals/presentation/signals_page.dart';
 import '../../features/telegram/presentation/telegram_page.dart';
+import '../../features/tradeblock/presentation/tradeblock_page.dart';
 import '../../features/watchlists/presentation/watchlists_page.dart';
 import '../shell/app_shell.dart';
 
@@ -42,6 +43,10 @@ class AppRouter {
           GoRoute(
             path: '/signals',
             pageBuilder: (c, s) => _noTransition(const SignalsPage()),
+          ),
+          GoRoute(
+            path: '/tradeblock',
+            pageBuilder: (c, s) => _noTransition(const TradeBlockPage()),
           ),
           GoRoute(
             path: '/watchlists',
